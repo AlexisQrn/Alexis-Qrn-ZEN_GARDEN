@@ -1,0 +1,129 @@
+
+@import "variable.scss"; @import "mixins.scss";
+
+body{
+    background-color: $yellow;
+    margin: auto;
+cursor: zoom-in;
+}
+    
+header{
+    background-image: url(https://images.unsplash.com/photo-1506744038136-46273834b3fb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80);
+    background-position: center 1026px;
+    &:hover{
+        background-image:url(https://images.unsplash.com/photo-1518605360659-2aa9659ef66d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1618&q=80);
+        background-position: center center ;
+    }
+h1{
+    color:white;
+    text-shadow: $bordure ;
+    display: flex;
+    justify-content: center;
+    height: 160px;
+    width: 100%;
+    font-size: 100px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0px 0px;
+    padding-top: 30px;
+    &:hover{
+        color:red;
+    }
+}
+
+h2{
+    color: $yellow ;
+    display: flex;
+    justify-content: center;
+    text-shadow: -3px 0 black, 0 3px black, 3px 0 black, 0 -3px black;
+    font-size: 50px;
+    margin: 0px 0px;
+    padding-bottom: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    &:hover{
+        color:red;
+    }
+}
+}
+
+.summary{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include roboto;
+    @include margin-no;
+}
+
+.summary p:nth-child(2){
+font-size: 20px;
+color: white;
+text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.summary p a{
+    font-size: 25px;
+color: $pink ;
+}
+
+#zen-supporting{
+    display: flex;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    transition: 3s;
+    &:hover{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: rgb(36, 36, 36);
+        color: rgb(131, 204, 22);
+        font-size: 40px ;
+        transition: 2s;
+     }
+.explanation{
+margin-right: 10px;
+margin-left: 10px;
+
+}
+.participation{
+    @extend .explanation;
+}
+
+.benefits{
+    @extend .explanation;
+}
+
+.requirements{
+    @extend .explanation;
+}
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: rgb(36, 36, 36);
+    @include roboto;
+  
+    a{
+       color: pink;
+   }
+    .design-selection{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+    }
+    .design-archives{
+        @extend .design-selection;
+    }
+    .zen-resources{
+        @extend .design-selection;
+    }
+}
+
+.preamble{
+  display: flex;
+   background-color: white;
+   flex-direction: column;
+   align-items: center;
+   @include roboto;
+}
